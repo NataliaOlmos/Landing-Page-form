@@ -1,0 +1,168 @@
+:root {
+    --bg-color-page: #e6fdde;
+    --bg-color-btn: #529AD9;
+    --bg-color-btn-hover: #56A662;
+    font-size: 16px;
+    --size-sm: 0.5rem;
+    --size-md: 1rem;
+    --size-lg: 1.5rem;
+    --size-xlg: 2rem;
+    --size-xxlg: 3.5rem;
+    --border-color: #c6ccc4;
+    --border-color-hover: #69A62D;
+    --border-color-hover-btn: #417bad;
+    --primary-color: #000000;
+    --secondary-color: #989899;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#main-container {
+    font-size: 0;
+}
+
+#left-container, #right-container {
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 50%;
+}
+
+#right-container {
+    background-color: var(--bg-color-page);
+    background-image: url("https://3.bp.blogspot.com/-V9EyRjn8cYo/VgTRAPlJApI/AAAAAAAAUlg/DMn5cTpECwk/s1600/tree-wallpaper-1280x1024-id28833.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: center center;
+}
+
+form {
+    width: 400px;
+    margin: var(--size-xxlg) auto;
+    font-size: var(--size-md);
+}
+
+#logo img {
+    width: 30px;
+}
+
+#logo {
+    text-align: center;
+}
+
+#title h2 {
+    font-size: var(--size-xxlg);
+    text-align: center;
+    padding: var(--size-md);
+}
+
+#login-social {
+    padding: var(--size-md) 0;
+}
+
+.btn-google {
+    background-color: #fefeff;
+    background-image: url("https://pbs.twimg.com/profile_images/988272404915875840/lE7ZkrO-_400x400.jpg");
+    background-repeat: no-repeat;
+    background-position: var(--size-md) center;
+    background-size: 7%;
+    border: solid 1px var(--border-color);
+    border-radius: 4px;
+    width: 100%;
+    padding: var(--size-sm);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-weight: bolder;
+}
+
+#separator {
+    text-align: center;
+    padding: var(--size-lg);
+}
+
+#separator span {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.line {
+    height: 2px;
+    width: 50px;
+    display: inline-block;
+    background-color: var(--border-color);
+    vertical-align: middle;
+}
+
+#inputs-container label {
+    display: block;
+    padding: var(--size-sm) 0;
+    font-weight: bolder;
+}
+
+#inputs-container input[type=text], #inputs-container input[type=password] {
+    display: block;
+    outline: none;
+    padding: var(--size-sm);
+    width: 100%;
+    border: solid 1px var(--border-color);
+    border: radius 4px;
+}
+
+#inputs-container input[type=text]:hover, #inputs-container input[type=password]:hover {
+    border: solid 2px var(--border-color-hover)
+}
+
+#inputs-container input[type=text]:focus, #inputs-container input[type=password]:focus {
+    border: solid 2px var(--border-color-hover)
+}
+
+#options-container {
+    padding: var(--size-sm) 0;
+    text-align: center;
+}
+
+#options-container div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#options-container div.right {
+    width: calc(100%-200px);
+    text-align: right;
+}
+
+#buttons-container {
+    text-align: center;
+    padding: var(--size-md);
+}
+
+.btn {
+    border: 0;
+    background-color: var(--bg-color-btn);
+    color: white;
+    padding: var(--size-sm);
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--border-color-hover-btn);
+}
+
+#register-container {
+    padding: var(--size-sm) 0;
+    text-align: center;
+}
